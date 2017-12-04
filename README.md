@@ -1,5 +1,5 @@
 # react-ecosystem-example
-React for the win!
+A simple project created with some of the state-of-the-art js libraries.
 
 Quickstart
 ----
@@ -15,4 +15,4 @@ Tech Stack
 * Http client: Axios
 * Css: styled-components
 
-This project created using create-react-app.
+This project was created using create-react-app.
