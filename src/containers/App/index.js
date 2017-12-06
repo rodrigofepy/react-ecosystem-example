@@ -3,8 +3,6 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 
-import PrivateRoute from '../PrivateRoute'
-import ProgressBar from '../ProgressBar'
 import Spinner from '../../components/Spinner'
 
 import * as components from './components'
@@ -23,7 +21,7 @@ const App = () => (
         <Route exact path="/" component={components.HomePage} />
 
         {/* Not found page */}
-        <Route component={components.NotFoundPage} />
+        {/* <Route component={components.NotFoundPage} /> */}
       </Switch>
     </BrowserRouter>
   </Wrapper>
