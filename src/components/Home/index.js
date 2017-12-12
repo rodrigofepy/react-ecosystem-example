@@ -1,14 +1,25 @@
-import React from 'react'
+import PropTypes from 'prop-types'
+import React, { Component } from 'react'
 import { intlShape } from 'react-intl'
 
 import messages from './messages'
 
-const Comp = (props, context) => (
-  <h1>{context.intl.formatMessage(messages.helloWorld)}</h1>
-)
+class Home extends Component {
+  componentDidMount() {
+    this.props.getRandomColors()
+  }
 
-Comp.contextTypes = {
+  render() {
+    return <h1>{this.context.intl.formatMessage(messages.helloWorld)}</h1>
+  }
+}
+
+Home.contextTypes = {
   intl: intlShape
 }
 
-export default Comp
+Home.propTypes = {
+  getRandomColors: PropTypes.func.isRequired
+}
+
+export default Home

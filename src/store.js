@@ -3,14 +3,17 @@ import createSagaMiddleware from 'redux-saga'
 import { all, fork } from 'redux-saga/effects'
 
 import languageProviderReducer from 'containers/LanguageProvider/reducer'
+import homeReducer from 'containers/HomePage/reducer'
+import homeSaga from 'containers/HomePage/saga'
 
-const sagas = []
+const sagas = [homeSaga]
 
 function* rootSaga() {
   yield all(sagas.map(saga => fork(saga)))
 }
 
 const rootReducer = combineReducers({
+  home: homeReducer,
   language: languageProviderReducer
 })
 
