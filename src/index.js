@@ -1,11 +1,11 @@
+import { translationMessages } from 'i18n'
 import { Provider } from 'react-redux'
 import React from 'react'
 import ReactDOM from 'react-dom'
+import store from 'store'
 
-import App from './containers/App'
-import LanguageProvider from './containers/LanguageProvider'
-import store from './store'
-import { translationMessages } from './i18n'
+import App from 'containers/App'
+import LanguageProvider from 'containers/LanguageProvider'
 
 const render = messages => {
   ReactDOM.render(

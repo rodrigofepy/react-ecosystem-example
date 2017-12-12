@@ -2,7 +2,7 @@ import { applyMiddleware, compose, createStore, combineReducers } from 'redux'
 import createSagaMiddleware from 'redux-saga'
 import { all, fork } from 'redux-saga/effects'
 
-import languageProviderReducer from './containers/LanguageProvider/reducer'
+import languageProviderReducer from 'containers/LanguageProvider/reducer'
 
 const sagas = []
 

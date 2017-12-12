@@ -1,7 +1,7 @@
-import SpinnerLoader from '../../components/SpinnerLoader'
+import SpinnerLoader from 'components/SpinnerLoader'
 
 export const HomePage = SpinnerLoader({
-  loader: () => import('../HomePage')
+  loader: () => import('containers/HomePage')
 })
 // export const NotFoundPage = SpinnerLoader({
 //   loader: () => import('../NotFoundPage')

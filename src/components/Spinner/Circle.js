@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components'
 
-import { colors } from '../../styles'
+import { colors } from 'styles'
 
 const rotate360 = keyframes`
   from {
