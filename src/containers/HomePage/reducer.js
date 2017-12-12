@@ -1,7 +1,9 @@
 import { GET_RANDOM_COLORS_OK, SET_SENDING_REQUEST } from './constants'
 
 const initialState = {
-  data: {},
+  data: {
+    colors: []
+  },
   sendingRequest: false
 }
 
